@@ -1,0 +1,7 @@
+<h2>ADFS</h2><hr>
+<% if current_user.nil? %>
+  <h3><%= link_to "Sign in", new_user_session_path %></h3>
+<% else %>
+  <p>Infor user: </p>
+  <h4>Email: <%= current_user.email %></h4>
+<% end %>
